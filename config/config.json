@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "root",
+    "password": "workbench", 
+    "database": "LechonSolutionsDB",
+    "host": "localhost",
+    "port": 3308, 
+    "dialectOptions": {
+      "keepAlive": true
+  }
+},
+  "test": {
+    "username": "root",
+    "password": "workbench", 
+    "database": "LechonSolutionsDB",
+    "host": "localhost",
+    "port": 3308, 
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "workbench", 
+    "database": "LechonSolutionsDB",
+    "host": "localhost",
+    "port": 3308, 
+    "dialect": "mysql"
+  }
+}

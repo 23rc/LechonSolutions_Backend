@@ -1,10 +1,10 @@
-const mysql = require('mysql2');
+/*const mysql = require('mysql2');
 
 const mysqlConnection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'workbench',
-  database: 'LechonSolutionDB',
+  password: 'admin',
+  database: 'LechonSolutionsDB',
   port:3308
  
 });
@@ -18,4 +18,4 @@ mysqlConnection.connect( err => {
   }
 });
 
-module.exports = mysqlConnection;
+module.exports = mysqlConnection;*/
