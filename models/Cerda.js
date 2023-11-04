@@ -20,6 +20,7 @@ const Cerda = sequelize.define('Cerda', {
   },
   observacion: {
     type: DataTypes.STRING,
+    
   },
   altura: {
     type: DataTypes.STRING,
