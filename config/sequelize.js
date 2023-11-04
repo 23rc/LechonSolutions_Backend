@@ -1,11 +1,28 @@
 // config/sequelize.js
 
 const { Sequelize } = require('sequelize');
+const dotenv =require ('dotenv')
+dotenv.config()
 
-const sequelize = new Sequelize('LechonSolutionsDB', 'root', 'workbench', {
-  host: 'localhost',
-  dialect: 'mysql',
-  port: 3308, // Puerto según el manejador o plataforma.
-  //logging: false // Desactiva el registro de consultas
-});
+const dbCredencials ={
+  database:process.env.DB_NAME,
+  user:process.env.DB_USER,
+  password:process.env.DB_PASSWORD,
+  host:process.env.DB_HOST,
+  port:process.env.DB_PORT,
+};
+
+
+const sequelize = new Sequelize(
+dbCredencials.database,
+dbCredencials.user,
+dbCredencials.password,
+{
+  port:dbCredencials.port,
+  host:dbCredencials.host,
+  dialect: "mysql",
+}
+);
+
+
 module.exports = sequelize;
