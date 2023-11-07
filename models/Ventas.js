@@ -27,7 +27,7 @@ const Ventas = sequelize.define('Ventas', {
     allowNull: false,
   },
 }, {
-  tableName: 'Ventas', // Nombre de la tabla en la base de datos
+  tableName: 'ventas', // Nombre de la tabla en la base de datos
   timestamps: false, // Desactiva las columnas createdAt y updatedAt
 });
 
