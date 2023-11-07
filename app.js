@@ -47,6 +47,7 @@ const DesteteRoute = require('./api/routes/destete');
 app.use('/destete',DesteteRoute);
 
 
+
 const CamadaLechonesRoute = require('./api/routes/camadaLechones');
 app.use('/camadalechones',CamadaLechonesRoute);
 
@@ -54,11 +55,14 @@ const VentasRoute = require('./api/routes/ventas');
 app.use('/ventas',VentasRoute);
 
 
+
 const ProductoRoute = require('./api/routes/producto');
 app.use('/producto',ProductoRoute);
 
+
 const ProveedorRoute = require('./api/routes/proveedor');
 app.use('/proveedor',ProveedorRoute);
+
 
 
 const ComprasRoute = require('./api/routes/compras');
